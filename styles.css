@@ -19,7 +19,11 @@ header {
     width: 100%;
     align-items: center;
     justify-content: flex-end;
-   
+    margin-right: 20px;
+}
+
+.header-right > span {
+    margin-left: 10px;
 }
 
 header #logo {
@@ -35,6 +39,7 @@ header #logo {
 
 .search-container {
     display: inline-flex;
+    align-items: center;
     border: 1px solid #ccc;
     border-radius: 25px;
     padding: 0.5rem 0.5rem 0.5rem 0.5em;
@@ -53,6 +58,6 @@ header #logo {
     width: 25px;
 }
 
-#magnifying {
-    width: 30px;
+#search-magnifying {
+    margin: 0 10px;
 }

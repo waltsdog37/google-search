@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Google</title>
 </head>
+
 <body>
-   
-<header>
-    <div class="header-left">
-        <img src="images/google.png" id="logo" alt="logo" title="Go to Google Home">
-        
-        <div class="search-main-container">
-            <div class="search-container">
-                <input id="search-bar" type="text" placeholder="Search">
-                <img src="images/voice-search.png" id="voice" alt="voice" title="Search by voice">
-                <img src="images/search.png" id="magnifying" alt="magnifying">
+
+    <header>
+        <div class="header-left">
+            <img src="images/google.png" id="logo" alt="logo" title="Go to Google Home">
+
+            <!-- add to vertical flex for whole page???-->
+            
+            <div class="search-main-container">
+                <div class="search-container">
+                    <input id="search-bar" type="text" placeholder="Search">
+                    <img src="images/voice-search.png" id="voice" alt="voice" title="Search by voice">
+                    <img src="images/search.png" id="search-magnifying" alt="magnifying">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="header-right">
-        <img src="images/apps.jpg" id="apps-img" alt="apps">
-        <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/search%3Fq%3Dbuild%2Bthis%2Bwebpage">Sign Out</a>
-        
-    </div>
+        <div class="header-right">
+            <span><img src="images/app.png" id="apps-img" alt="apps"></span>
+            <span><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/search%3Fq%3Dbuild%2Bthis%2Bwebpage">
+                <img src="images/circle.png"></a></span>
+        </div>
+    </header>
 
-</header>
-    
+    <div class="nav-bar">
+        <a href="http://localhost:52330/index.html"><img src="images/search.png" id="nav-magnifying" alt="magnifying">All</a>
+
+    </div>
 
 </body>
 
