@@ -1,40 +1,51 @@
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.5em;
+}
+
+a:-webkit-any-link { 
+    text-decoration: none !important;
+    color: #70757a;
+}
+
 header {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-    margin-top: 30px;
-    align-items: center;
+    height: 36px;
+    margin-top: 25px;
 }
 
 .header-left {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
+    display: inline;
 }
 
 .header-right {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
+    float: right;
     margin-right: 20px;
 }
-
-.header-right > span {
-    margin-left: 10px;
+#apps-img {
+    padding: 6px;
 }
 
 header #logo {
     height: 30px;
     margin-left: 17px;
     margin-right: 25px;
+    padding-top: 3px;
+}
+
+#verticle-flex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 630px;
+
 }
 
 .search-main-container {
     display: flex;
-    height: 45px;
+    height: 30px;
+    width: 630px;
 }
 
 .search-container {
@@ -43,6 +54,10 @@ header #logo {
     border: 1px solid #ccc;
     border-radius: 25px;
     padding: 0.5rem 0.5rem 0.5rem 0.5em;
+}
+
+.search-container:hover {
+    box-shadow: 1px 1px 2px 1px rgba(143, 143, 143, 0.6)
 }
 
 #search-bar {
@@ -56,8 +71,77 @@ header #logo {
 
 #voice, #apps-img {
     width: 25px;
+    height: 25px;
 }
 
 #search-magnifying {
-    margin: 0 10px;
+    margin: 0 30px;
+}
+
+.nav-bar {
+    height: 20px;
+    padding: 0 10px 0 10px;
+    margin-top: 16px;
+}
+
+#all-link {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1A73E8;
+    color: #1A73E8;
+}
+
+.nav-bar a, .nav-bar img {
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-size: 13px;    
+}
+
+.nav-bar .left {
+    padding-right: 25px;
+}
+
+.nav-bar .right {
+    float: right;
+    padding-left: 25px;
+    padding-top: 2px;
+}
+
+.result-count {
+    font-size: 14px;
+    color: #70757a;
+    padding: 15px 10px 0 10px;
+}
+
+.featured {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}   
+
+.featured-caption {
+    color: #70757a;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.clickable {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-link {
+    color: #1a0dab;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.green-link {
+    color: #006621;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.result {
+    margin: 25px 10px;
 }
